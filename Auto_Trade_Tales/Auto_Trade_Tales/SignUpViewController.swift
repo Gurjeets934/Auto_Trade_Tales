@@ -1,29 +1,53 @@
-//
-//  SignUpViewController.swift
-//  Auto_Trade_Tales
-//
-//  Created by prabhat singh on 2023-12-02.
-//
-
 import UIKit
 
-class SignUpViewController: UIViewController {
-
+class SignupViewController: UIViewController {
+    
+    // Outlets for the text fields
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var reEnterPasswordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // Additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // Action for the Sign Up button
+    @IBAction func signUpButtonTapped(_ sender: UIButton) {
+        // Validate the fields are not empty and passwords match
+        guard let name = nameTextField.text, !name.isEmpty,
+              let lastName = lastNameTextField.text, !lastName.isEmpty,
+              let email = emailTextField.text, !email.isEmpty,
+              let password = passwordTextField.text, !password.isEmpty,
+              let reEnteredPassword = reEnterPasswordTextField.text, !reEnteredPassword.isEmpty else {
+            showAlert(message: "Please fill in all fields.")
+            return
+        }
+        
+        guard password == reEnteredPassword else {
+            showAlert(message: "Passwords do not match.")
+            return
+        }
+        
+        // Mock signup logic
+        performMockSignup(name: name, lastName: lastName, email: email, password: password)
     }
-    */
-
+    
+    // Mock signup function
+    func performMockSignup(name: String, lastName: String, email: String, password: String) {
+        // Here we just print to the console, but you could replace this with actual network request logic.
+        print("Mock signup successful for user: \(name) \(lastName)")
+        
+        // For now, we just dismiss the view controller after 'signing up'
+        dismiss(animated: true, completion: nil)
+    }
+    
+    // Helper function to show alerts
+    func showAlert(message: String) {
+        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true)
+    }
 }
