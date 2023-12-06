@@ -1,13 +1,13 @@
 //
-//  HomeViewController.swift
+//  CarTableViewCell.swift
 //  Auto_Trade_Tales
 //
-//  Created by prabhat singh on 2023-12-04.
+//  Created by prabhat singh on 2023-12-06.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class CarTableViewCell: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

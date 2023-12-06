@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BBB83F9F2B1DC45600E9AADD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB83F9E2B1DC45600E9AADD /* HomeViewController.swift */; };
+		BB526F562B20A219007764DB /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB526F552B20A219007764DB /* CarTableViewCell.swift */; };
 		BBB83FA22B1DC60200E9AADD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB83FA02B1DC4CB00E9AADD /* LoginViewController.swift */; };
 		BBB83FAA2B1DD31F00E9AADD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB83FA92B1DD31F00E9AADD /* SignUpViewController.swift */; };
+		BBB83FB02B1FD8E200E9AADD /* car_data.json in Resources */ = {isa = PBXBuildFile; fileRef = BBB83FAF2B1FD8E200E9AADD /* car_data.json */; };
+		BBB83FBA2B2079DE00E9AADD /* car_daat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB83FB92B2079DE00E9AADD /* car_daat.swift */; };
+		BBB83FBE2B209DEF00E9AADD /* HOMEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB83FBD2B209DEF00E9AADD /* HOMEViewController.swift */; };
 		C4188CEF2B16E3BF00144AA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4188CEE2B16E3BF00144AA0 /* AppDelegate.swift */; };
 		C4188CF12B16E3BF00144AA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4188CF02B16E3BF00144AA0 /* SceneDelegate.swift */; };
 		C4188CF32B16E3BF00144AA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4188CF22B16E3BF00144AA0 /* ViewController.swift */; };
@@ -19,9 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BBB83F9E2B1DC45600E9AADD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BB526F552B20A219007764DB /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
 		BBB83FA02B1DC4CB00E9AADD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BBB83FA92B1DD31F00E9AADD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BBB83FAF2B1FD8E200E9AADD /* car_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = car_data.json; sourceTree = "<group>"; };
+		BBB83FB92B2079DE00E9AADD /* car_daat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = car_daat.swift; sourceTree = "<group>"; };
+		BBB83FBD2B209DEF00E9AADD /* HOMEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOMEViewController.swift; sourceTree = "<group>"; };
 		C4188CEB2B16E3BF00144AA0 /* Auto_Trade_Tales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auto_Trade_Tales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4188CEE2B16E3BF00144AA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4188CF02B16E3BF00144AA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,16 +68,19 @@
 		C4188CED2B16E3BF00144AA0 /* Auto_Trade_Tales */ = {
 			isa = PBXGroup;
 			children = (
+				BBB83FAF2B1FD8E200E9AADD /* car_data.json */,
 				C4188CEE2B16E3BF00144AA0 /* AppDelegate.swift */,
 				C4188CF02B16E3BF00144AA0 /* SceneDelegate.swift */,
 				C4188CF22B16E3BF00144AA0 /* ViewController.swift */,
 				BBB83FA02B1DC4CB00E9AADD /* LoginViewController.swift */,
-				BBB83F9E2B1DC45600E9AADD /* HomeViewController.swift */,
 				C4188CF42B16E3BF00144AA0 /* Main.storyboard */,
 				BBB83FA92B1DD31F00E9AADD /* SignUpViewController.swift */,
 				C4188CF72B16E3C000144AA0 /* Assets.xcassets */,
 				C4188CF92B16E3C000144AA0 /* LaunchScreen.storyboard */,
 				C4188CFC2B16E3C000144AA0 /* Info.plist */,
+				BBB83FB92B2079DE00E9AADD /* car_daat.swift */,
+				BBB83FBD2B209DEF00E9AADD /* HOMEViewController.swift */,
+				BB526F552B20A219007764DB /* CarTableViewCell.swift */,
 			);
 			path = Auto_Trade_Tales;
 			sourceTree = "<group>";
@@ -137,6 +146,7 @@
 				C4188CFB2B16E3C000144AA0 /* LaunchScreen.storyboard in Resources */,
 				C4188CF82B16E3C000144AA0 /* Assets.xcassets in Resources */,
 				C4188CF62B16E3BF00144AA0 /* Main.storyboard in Resources */,
+				BBB83FB02B1FD8E200E9AADD /* car_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,10 +159,12 @@
 			files = (
 				BBB83FAA2B1DD31F00E9AADD /* SignUpViewController.swift in Sources */,
 				BBB83FA22B1DC60200E9AADD /* LoginViewController.swift in Sources */,
+				BB526F562B20A219007764DB /* CarTableViewCell.swift in Sources */,
+				BBB83FBA2B2079DE00E9AADD /* car_daat.swift in Sources */,
 				C4188CF32B16E3BF00144AA0 /* ViewController.swift in Sources */,
 				C4188CEF2B16E3BF00144AA0 /* AppDelegate.swift in Sources */,
 				C4188CF12B16E3BF00144AA0 /* SceneDelegate.swift in Sources */,
-				BBB83F9F2B1DC45600E9AADD /* HomeViewController.swift in Sources */,
+				BBB83FBE2B209DEF00E9AADD /* HOMEViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

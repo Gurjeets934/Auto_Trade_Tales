@@ -38,12 +38,13 @@ class LoginViewController: UIViewController {
         return password == "password"
     }
     
-    // Function to transition to the home screen
+    // Method to transition to the HOMEViewController
     func transitionToHome() {
-        // Replace 'HomeViewController' with the actual class name of your home view controller
-        let homeViewController = storyboard?.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
-        view.window?.rootViewController = homeViewController
-        view.window?.makeKeyAndVisible()
+        // Make sure the HOMEViewController is in the storyboard and has the identifier "HOMEViewController"
+        if let homeViewController = storyboard?.instantiateViewController(withIdentifier: "HOMEViewController") as? HOMEViewController {
+            // Assuming you are using a navigation controller
+            navigationController?.pushViewController(homeViewController, animated: true)
+        }
     }
     
     // Helper function to show alerts
