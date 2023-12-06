@@ -35,7 +35,14 @@ class LoginViewController: UIViewController {
     func mockLogin(email: String, password: String) -> Bool {
         // Replace this with your actual authentication logic
         // Here we're just checking if the password is "password" for the example
-        return password == "password"
+        var flag = false
+        
+        if(email == "user@email.com" && password == "password")
+        {
+           flag = true
+        }
+        return flag
+        
     }
     
     // Method to transition to the HOMEViewController
