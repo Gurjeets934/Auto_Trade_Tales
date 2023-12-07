@@ -19,6 +19,7 @@
 		C4188CF62B16E3BF00144AA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4188CF42B16E3BF00144AA0 /* Main.storyboard */; };
 		C4188CF82B16E3C000144AA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4188CF72B16E3C000144AA0 /* Assets.xcassets */; };
 		C4188CFB2B16E3C000144AA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4188CF92B16E3C000144AA0 /* LaunchScreen.storyboard */; };
+		C461248C2B215BAF00A84AF5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C461248B2B215BAF00A84AF5 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C4188CF72B16E3C000144AA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4188CFA2B16E3C000144AA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4188CFC2B16E3C000144AA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C461248B2B215BAF00A84AF5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				BBB83FB92B2079DE00E9AADD /* car_daat.swift */,
 				BBB83FBD2B209DEF00E9AADD /* HOMEViewController.swift */,
 				BB526F552B20A219007764DB /* CarTableViewCell.swift */,
+				C461248B2B215BAF00A84AF5 /* ProfileViewController.swift */,
 			);
 			path = Auto_Trade_Tales;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				BBB83FBA2B2079DE00E9AADD /* car_daat.swift in Sources */,
 				C4188CF32B16E3BF00144AA0 /* ViewController.swift in Sources */,
 				C4188CEF2B16E3BF00144AA0 /* AppDelegate.swift in Sources */,
+				C461248C2B215BAF00A84AF5 /* ProfileViewController.swift in Sources */,
 				C4188CF12B16E3BF00144AA0 /* SceneDelegate.swift in Sources */,
 				BBB83FBE2B209DEF00E9AADD /* HOMEViewController.swift in Sources */,
 			);

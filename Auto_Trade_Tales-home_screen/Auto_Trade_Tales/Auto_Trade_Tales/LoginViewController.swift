@@ -14,15 +14,17 @@ class LoginViewController: UIViewController {
     // Action for the Sign In button
     @IBAction func signInButtonTapped(_ sender: UIButton) {
         // Get the text from the email and password fields
-        guard let email = emailTextField.text, !email.isEmpty,
-              let password = passwordTextField.text, !password.isEmpty else {
+        let email = emailTextField.text
+        let password = passwordTextField.text
+        
+        if(email!.isEmpty && password!.isEmpty) {
             // Handle empty fields, alert the user
             showAlert(message: "Please enter both email and password.")
-            return
+            
         }
         
         // Perform the mock login check
-        if mockLogin(email: email, password: password) {
+        if mockLogin(email: email!, password: password!) {
             // If login is successful, transition to the home view controller
             transitionToHome()
         } else {
@@ -48,11 +50,12 @@ class LoginViewController: UIViewController {
     // Method to transition to the HOMEViewController
     func transitionToHome() {
         // Make sure the HOMEViewController is in the storyboard and has the identifier "HOMEViewController"
-        if let homeViewController = storyboard?.instantiateViewController(withIdentifier: "HOMEViewController") as? HOMEViewController {
-            // Assuming you are using a navigation controller
-            navigationController?.pushViewController(homeViewController, animated: true)
+        print("function working")
+        let homeViewController = HOMEViewController()
+        // Assuming you are using a navigation controller
+        self.navigationController?.pushViewController(homeViewController, animated: true)
         }
-    }
+    
     
     // Helper function to show alerts
     func showAlert(message: String) {
